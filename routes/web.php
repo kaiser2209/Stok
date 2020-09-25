@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//
+
 Route::prefix('admin')->group(function () {
     Route::get('/produtos', 'ProdutoController@listar')->name('produtos.listar');
     Route::get('/produtos/adicionar', 'ProdutoController@adicionar')->name('produtos.form_adicionar');
